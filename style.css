@@ -1,0 +1,222 @@
+/* --- 1. BASE Y ESTRUCTURA (ARREGLA EL FOOTER) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Esto obliga al footer a quedarse siempre al final de la ventana */
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #D6CAD6; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El main se estira para empujar al footer siempre al fondo */
+main {
+    flex: 1 0 auto;
+}
+
+/* El footer se queda fijo en la base del contenido */
+footer {
+    flex-shrink: 0;
+}
+
+/* --- 2. NAVEGACIÓN --- */
+nav {
+    background-color: #9E849E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 30px;
+}
+
+.logo-p75 img {
+    height: 35px;
+    width: auto;
+    display: block;
+}
+
+.enlaces-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* --- 3. INICIO (NOMBRE Y SOBRE MÍ) --- */
+.cabecera-cv {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.nombre-principal {
+    color: #614A5E;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.titulo-profesional {
+    color: #836A83;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.seccion-sobre-mi {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+}
+
+.tarjeta-sobre-mi {
+    background-color: #C4B5C4;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    max-width: 850px;
+    width: 95%;
+    gap: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.contenedor-imagen-oso img {
+    width: 250px;
+    height: auto;
+}
+
+.titulo-sobre-mi {
+    color: #614A5E;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.parrafo-sobre-mi {
+    color: #4A5D4E; /* Verde orgánico */
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* --- 4. SECCIÓN DE BOTONES --- */
+.seccion-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.titulo-seccion {
+    color: #614A5E;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.grupo-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.boton-verde {
+    background-color: #8E9E94;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px 0;
+    width: 450px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* --- 5. GRILLA DE IMÁGENES (OPTIMIZADA) --- */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+.caja-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+/* --- 6. CABECERA DE GALERÍAS --- */
+.cabecera-galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.titulo-galeria {
+    color: #614A5E;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.boton-volver-atras {
+    position: absolute;
+    left: 0;
+    background-color: #614A5E;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* --- 7. VIDEOS --- */
+.grid-videos-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.caja-video video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* --- 8. FOOTER (BARRA DE CONTACTO) --- */
+.barra-contacto {
+    background-color: #836A83;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 100%;
+}
