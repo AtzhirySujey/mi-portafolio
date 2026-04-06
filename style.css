@@ -1,11 +1,11 @@
-/* --- 1. BASE Y ESTRUCTURA (ARREGLA EL FOOTER) --- */
+/* ------------------------------------ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Esto obliga al footer a quedarse siempre al final de la ventana */
+/* ------------------------------------ */
 html, body {
     height: 100%;
 }
@@ -17,17 +17,17 @@ body {
     flex-direction: column;
 }
 
-/* El main se estira para empujar al footer siempre al fondo */
+/* ------------------------------------ */
 main {
     flex: 1 0 auto;
 }
 
-/* El footer se queda fijo en la base del contenido */
+/* ------------------------------------ */
 footer {
     flex-shrink: 0;
 }
 
-/* --- 2. NAVEGACIÓN --- */
+/* ------------------------------------ */
 nav {
     background-color: #9E849E;
     display: flex;
@@ -55,7 +55,7 @@ nav {
     font-size: 18px;
 }
 
-/* --- 3. INICIO (NOMBRE Y SOBRE MÍ) --- */
+/* ------------------------------------ */
 .cabecera-cv {
     text-align: center;
     margin-top: 50px;
@@ -105,13 +105,13 @@ nav {
 }
 
 .parrafo-sobre-mi {
-    color: #4A5D4E; /* Verde orgánico */
+    color: #4A5D4E;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
 }
 
-/* --- 4. SECCIÓN DE BOTONES --- */
+/* ------------------------------------ */
 .seccion-botones {
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@ nav {
     transition: 0.3s;
 }
 
-/* --- 5. GRILLA DE IMÁGENES (OPTIMIZADA) --- */
+/* ------------------------------------ */
 .contenedor-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -165,7 +165,7 @@ nav {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
 }
 
-/* --- 6. CABECERA DE GALERÍAS --- */
+/* ------------------------------------ */
 .cabecera-galeria {
     display: flex;
     align-items: center;
@@ -195,7 +195,7 @@ nav {
     text-decoration: none;
 }
 
-/* --- 7. VIDEOS --- */
+/* ------------------------------------ */
 .grid-videos-vertical {
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ nav {
     border-radius: 15px;
 }
 
-/* --- 8. FOOTER (BARRA DE CONTACTO) --- */
+/* ------------------------------------ */
 .barra-contacto {
     background-color: #836A83;
     display: flex;
@@ -220,3 +220,5 @@ nav {
     font-weight: bold;
     width: 100%;
 }
+
+/* ------------------------------------ */
